@@ -48,3 +48,5 @@ VALUES ('Ange', 'ange@example.com', '123-456-7890'),
     ('Nicola', 'nicola@example.com', '901-234-5678'),
     ('Mariana', 'mariana@example.com', '012-345-6789'),
     ('Anke', 'anke@example.com', '123-456-7890');
+-- The above SQL code creates a table named `clients_stts` with columns for client information and inserts sample data into it.
+-- The table includes fields for the client's name, email, phone number, and the date the record was created.
