@@ -1,17 +1,11 @@
 USE kamilah_schwab_books;
 CREATE TABLE IF NOT EXISTS orders (
     id INT PRIMARY KEY AUTO_INCREMENT,
-    -- Unique order ID
     client_id INT NOT NULL,
-    -- Foreign key from clients table
     book_id INT NOT NULL,
-    -- Foreign key from books table
     quantity INT NOT NULL,
-    -- Quantity of the book in the order
     total DECIMAL(10, 2) NOT NULL,
-    -- Total price of this item (quantity * price)
     order_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    -- When the order was placed
     FOREIGN KEY (client_id) REFERENCES clients(id),
     FOREIGN KEY (book_id) REFERENCES books(id)
 );

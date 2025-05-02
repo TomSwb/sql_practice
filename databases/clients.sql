@@ -1,12 +1,12 @@
 USE kamilah_schwab_books;
-CREATE TABLE IF NOT EXISTS clients_stts (
+CREATE TABLE IF NOT EXISTS clients (
     id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(100) NOT NULL,
     email VARCHAR(100) NOT NULL UNIQUE,
     phone VARCHAR(15) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-INSERT INTO clients_stts (name, email, phone)
+INSERT INTO clients (name, email, phone)
 VALUES ('Ange', 'ange@example.com', '123-456-7890'),
     ('Antoine', 'antoine@example.com', '234-567-8901'),
     (
@@ -48,5 +48,3 @@ VALUES ('Ange', 'ange@example.com', '123-456-7890'),
     ('Nicola', 'nicola@example.com', '901-234-5678'),
     ('Mariana', 'mariana@example.com', '012-345-6789'),
     ('Anke', 'anke@example.com', '123-456-7890');
--- The above SQL code creates a table named `clients_stts` with columns for client information and inserts sample data into it.
--- The table includes fields for the client's name, email, phone number, and the date the record was created.
