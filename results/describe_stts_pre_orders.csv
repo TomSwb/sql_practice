@@ -1,0 +1,7 @@
+"Field","Type","Null","Key","Default","Extra"
+"id","int","NO","PRI","","auto_increment"
+"client","varchar(100)","YES","","",""
+"french","int","YES","","0",""
+"english","int","YES","","0",""
+"cost","decimal(10,2)","YES","","","STORED GENERATED"
+"delivered","tinyint(1)","YES","","0",""
