@@ -1,7 +1,5 @@
 -- This SQL script demonstrates how to select data from multiple tables using JOINs.
 USE kamilah_schwab_books;
-SELECT *
-FROM orders;
 SELECT c.name,
     b.language,
     o.quantity,
