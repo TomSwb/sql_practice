@@ -5,6 +5,7 @@ CREATE TABLE IF NOT EXISTS orders (
     book_id INT NOT NULL,
     quantity INT NOT NULL,
     total DECIMAL(10, 2) NOT NULL,
+    paid BOOLEAN NOT NULL DEFAULT FALSE,
     order_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (client_id) REFERENCES clients(id),
     FOREIGN KEY (book_id) REFERENCES books(id)
