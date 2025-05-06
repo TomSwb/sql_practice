@@ -1,5 +1,0 @@
-USE kamilah_schwab_books;
-
-UPDATE orders
-SET paid = TRUE
-WHERE id = 6;
